@@ -17,6 +17,9 @@
 
 /* === Private variable declarations =========================================================== */
 
+/**
+ * @brief Estructura privada para controlar un objeto gpio.
+ */
 struct gpio_s {
     uint8_t port;
     uint8_t bit;
@@ -32,6 +35,10 @@ struct gpio_s {
 
 /* === Private function implementation ========================================================= */
 
+/**
+ * @brief Función privada que crea una nueva  instancia  de un objeto gpio usando memoria estática.
+ * @return Puntero  a estructura gpio_s.  Devuelve  NULL si no tuvo éxito.
+ */
 static gpio_t allocate_instance() {
     static struct gpio_s instances[GPIO_MAX_INSTANCES] = {0};
 

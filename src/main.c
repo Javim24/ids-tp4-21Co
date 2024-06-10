@@ -21,6 +21,8 @@ SPDX-License-Identifier: MIT
 
 /** @file main.c
  ** @brief Definición de la función principal del programa
+ ** @author Javier Mosconi
+ ** @date  2024-06-10
  **/
 
 /* === Headers files inclusions =============================================================== */
@@ -29,7 +31,6 @@ SPDX-License-Identifier: MIT
 #include "gpio.h"
 
 /* === Macros definitions ====================================================================== */
-
 #define LED_ROJO_PUERTO 1
 #define LED_ROJO_PIN    7
 
